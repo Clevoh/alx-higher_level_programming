@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 for letter in range(ord('a'), ord('z') + 1):
-    print('{:c}'.format(letter), end='')
+    i f letter != ord('q') and letter != ord('e'):
+        print('{:c}'.format(letter), end='')
