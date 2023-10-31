@@ -9,4 +9,4 @@ def add_integer(a, b=98):
     if isinstance(b, float):
         b = int(b)
     return (a +b)
-print(add_integer(2.0, 3.0))
+print(add_integer(2.0, 3.4))
