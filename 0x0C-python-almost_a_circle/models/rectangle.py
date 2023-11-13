@@ -5,6 +5,7 @@ Create a Rectangle class that inherits from Base.
 import json
 from models.base import Base
 
+
 class Rectangle(Base):
     """class describing rectangle
     public instance method:
@@ -98,8 +99,8 @@ class Rectangle(Base):
 
         for y in range(0, self.__y):
             print()
-        for i in range (0,self.__height):
-            for x in range (0, self.__x):
+        for i in range(0, self.__height):
+            for x in range(0, self.__x):
                 print(" ", end="")
             for j in range(0, self.__width):
                 print("#", end="")
@@ -118,12 +119,12 @@ class Rectangle(Base):
         if args is not None and len(args) != 0:
             if len(args) >= 1:
                 if type(args[0]) != int and args[0] is not None:
-                    raise TypeError ("id must be an integer")
+                    raise TypeError("id must be an integer")
                 self.id = args[0]
                 if len(args) > 1:
                     self.width = args[1]
                 if len(args) > 2:
-                   self.height = args[2]
+                    self.height = args[2]
                 if len(args) > 3:
                     self.x = args[3]
                 if len(args) > 4:
@@ -142,9 +143,9 @@ class Rectangle(Base):
                         self.x = value
                     if key == "y":
                         self.y = value
-    
+
     def to_dictionary(self):
         """Returns the dictionary representation of a Rectangle."""
         my_dict = {'id': self.id, 'width': self.__width,
-                'height': self.__height, 'x': self.__x, 'y': self.__y}
+                   'height': self.__height, 'x': self.__x, 'y': self.__y}
         return my_dict
