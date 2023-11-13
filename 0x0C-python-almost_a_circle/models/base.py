@@ -6,6 +6,7 @@ import json
 import os
 import csv
 
+
 class Base:
     """Class with private class attribute __nb_objects"""
     __nb_objects = 0
@@ -16,7 +17,7 @@ class Base:
         -id: id of the instance
         """
 
-        if type(id) != int and  id is not None:
+        if type(id) != int and id is not None:
             raise TypeError("id must be an integer")
         if id is not None:
             self.id = id
@@ -70,7 +71,6 @@ class Base:
         """
 
         if cls.__name__ == 'Rectangle':
-        
             dummy = cls(1, 1)
         elif cls.__name__ == 'Square':
             dummy = cls(1)
@@ -178,4 +178,3 @@ class Base:
             t.left(90)
             t.forward(rect.height)
             t.left(90)
-
