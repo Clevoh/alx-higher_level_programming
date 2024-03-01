@@ -6,5 +6,5 @@ if __name__ == "__main__":
     import sys
 
     lis = sys.argv
-    re = requests.get(lis[1])
-    print(re.headers.get('X-Request-Id'))
+    r = requests.get(lis[1])
+    print(r.headers.get('X-Request-Id'))
